@@ -1,0 +1,124 @@
+<div class="tech-container">
+  <div class="containerImg">
+    <header class="page-header">
+      <h1 class="page-title">T E C H N O L O G Y</h1>
+    </header>
+  </div>
+
+  <main class="content-sections">
+       <section class="feature-image-section">
+      <div class="rounded-image-container first-image">
+      </div>
+    </section>
+
+    <section class="intro-section">
+      <div class="intro-columns">
+        <div class="intro-left">
+          <h2 class="intro-subtitle">Pushing the boundaries of what's possible in animation</h2>
+        </div>
+        <div class="intro-right">
+          <p class="intro-text">
+            At Pixar, our technology teams are at the forefront of innovation and creativity. 
+            With a strong legacy of pushing the boundaries in animation, these teams constantly 
+            explore new tools, systems, and techniques to bring our stories to life.
+          </p>
+          <p class="intro-text">
+            They are passionate about finding inventive solutions and enhancing the art of 
+            storytelling through cutting-edge technology. Their unwavering dedication breathes 
+            life into our captivating stories, elevating our animations to unimaginable heights.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="tech-sections">
+      <div class="tech-card">
+        <div class="tech-image">
+          <img *ngIf="technologies[0].image" [src]="technologies[0].image" [alt]="technologies[0].title" class="tech-img">
+        </div>
+        <div class="tech-content">
+          <h3 class="tech-title">{{ technologies[0].title }}</h3>
+          <p class="tech-description">{{ technologies[0].description }}</p>
+          <a [routerLink]="technologies[0].link" class="learn-more-btn">LEARN MORE</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature-image-section">
+      <div class="rounded-image-container second-image">
+      </div>
+    </section>
+
+    <section class="openusd-section">
+      <div class="openusd-columns">
+        <div class="openusd-left">
+        </div>
+        <div class="openusd-right">
+          <h3 class="openusd-title">{{ technologies[1].title }}</h3>
+          <p class="openusd-description">{{ technologies[1].description }}</p>
+          <a [routerLink]="technologies[1].link" class="learn-more-btn">LEARN MORE</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="tech-sections">
+      <div class="tech-card" *ngFor="let tech of technologies.slice(2)">
+        <div class="tech-image">
+          <img *ngIf="tech.image" [src]="tech.image" [alt]="tech.title" class="tech-img">
+        </div>
+        <div class="tech-content" [class.expanded-content]="tech.hasDropdowns">
+          <h3 class="tech-title">{{ tech.title }}</h3>
+          <p class="tech-description">{{ tech.description }}</p>
+          
+          <div *ngIf="tech.hasDropdowns" class="dropdowns-container">
+            <div class="dropdown-item" *ngFor="let dropdown of tech.dropdowns">
+              <div class="dropdown-header" (click)="toggleDropdown(tech.title + '_' + dropdown.title)">
+                <span class="dropdown-title">{{ dropdown.title }}</span>
+                <span class="dropdown-arrow" [class.expanded]="isDropdownExpanded(tech.title + '_' + dropdown.title)">
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                    <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </div>
+              <div class="dropdown-content" [class.expanded]="isDropdownExpanded(tech.title + '_' + dropdown.title)">
+                <p class="dropdown-text">{{ dropdown.content }}</p>
+              </div>
+            </div>
+          </div>
+          
+          <a [routerLink]="tech.link" class="learn-more-btn">LEARN MORE</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="systems-section">
+      <div class="systems-background">
+        <div class="systems-content">
+          <h2 class="systems-title">Systems</h2>
+          <p class="systems-description">
+            The Systems technology team at Pixar is responsible for the infrastructure of the entire studio, managing complex hardware and rendering equations to create visually exciting animated films with advanced special effects.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="tech-sections">
+      <div class="tech-card careers-card">
+        <div class="tech-image careers-image-container">
+          <img src="https://images.squarespace-cdn.com/content/v1/60241cb68df65b530cd84d95/120a8e41-237d-4506-95fb-566b886dea51/Group_03.jpg?format=1500w" alt="Careers at Pixar" class="tech-img">
+        </div>
+        <div class="tech-content">
+          <h3 class="tech-title">Careers at Pixar</h3>
+          <p class="tech-description">
+            Our technology teams are at the forefront of innovation, constantly pushing the 
+            boundaries of what's possible in the realm of animation. With their expertise 
+            and passion for developing cutting-edge tools and techniques, they breathe life 
+            into our characters and worlds, delivering a truly immersive and magical 
+            experience to our audiences.
+          </p>
+          <a href="/careers" class="learn-more-btn">LEARN MORE</a>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>

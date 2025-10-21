@@ -1,0 +1,282 @@
+.containerImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 650px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background-image: url(https://images.squarespace-cdn.com/content/v1/60241cb68df65b530cd84d95/7accd09f-a356-4405-8620-d1057d13515a/e380_13.light_comp_6k.911.jpg?format=2500w);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    .logo {
+        width: 900px;
+    }
+}
+
+.containerImg2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    width: 100%;
+    height: 400px;
+
+    .img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 60%;
+        height: 80%;
+        background-image: url(https://images.squarespace-cdn.com/content/v1/60241cb68df65b530cd84d95/1b498bda-809e-4972-9c13-6b51ed9c468b/hop_v2.jpg?format=2500w);
+        background-size: cover;
+        background-position: center center;
+
+        .logo2 {
+            width: 450px;
+            margin-bottom: -10px;
+            margin-left: 80px;
+        }
+
+        .textHoppers {
+            color: white;
+            margin-left: 30px;
+            margin-top: 0;
+            font-family: "Brandon Grotesque", "Montserrat", "Brandon Grotesque", "Helvetica Neue", Arial, sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 1.2;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-size: 1rem;
+            margin-left: 110px;
+        }
+    }
+}
+
+.containerImg3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+
+    .mainContainer {
+        display: flex;
+        width: 60%;
+        height: 100%;
+        gap: 20px;
+
+        .leftContainer {
+            width: 300px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            .topSection {
+                flex: 1;
+                background-image: url(https://images.squarespace-cdn.com/content/v1/60241cb68df65b530cd84d95/7b0a27d2-53fb-4cd5-86f4-656c87726432/20190731LucaArtReview99905.JPG-0.jpg?format=2500w);
+                border-radius: 5px;
+                background-size: cover;
+                background-position: center center;
+
+            }
+
+            .bottomSection {
+                flex: 1;
+                background-image: url(https://images.squarespace-cdn.com/content/v1/60241cb68df65b530cd84d95/6dbf1df6-bcc9-49bc-b3d3-c47583ea39ee/20230111Do000nShank06.JPG-0.jpg?format=2500w);
+                border-radius: 5px;
+                background-size: cover;
+                background-position: center center;
+
+            }
+        }
+
+        .rightContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex: 1;
+            height: 100%;
+            background-image: url(https://images.squarespace-cdn.com/content/v1/60241cb68df65b530cd84d95/fce44eb8-f14e-48a2-8832-9bb50e318690/car.jpg?format=2500w);
+            border-radius: 5px;
+            background-size: cover;
+            background-position: center center;
+
+            h1 {
+                margin-left: 40px;
+                color: white;
+                font-family: "Brandon Grotesque", "Montserrat", "Brandon Grotesque", "Helvetica Neue", Arial, sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 1.2;
+            }
+
+            p {
+                margin-left: 40px;
+                color: white;
+                font-family: "Brandon Grotesque", "Montserrat", "Brandon Grotesque", "Helvetica Neue", Arial, sans-serif;
+                font-style: normal;
+                line-height: 1.2;
+
+            }
+        }
+    }
+}
+
+.containerImg4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    width: 100%;
+    height: 400px;
+
+
+    .img {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        width: 60%;
+        height: 80%;
+        background-image: url(https://images.squarespace-cdn.com/content/v1/60241cb68df65b530cd84d95/319ff132-f2a9-4159-89ef-1264b68b4e81/wl_home2.jpg?format=2500w);
+        background-size: cover;
+        background-position: center center;
+        border: 2px solid gray;
+
+        .logo3 {
+            width: 550px;
+            margin-right: 80px;
+            margin-bottom: 20px;
+        }
+
+        .textStreaming {
+            color: black;
+            font-family: "Brandon Grotesque", "Montserrat", "Brandon Grotesque", "Helvetica Neue", Arial, sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 1.2;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-size: 1rem;
+            margin-right: 150px;
+            margin-bottom: 15px;
+        }
+
+        .disneyLogo {
+            width: 120px;
+            margin-right: 300px;
+        }
+    }
+}
+
+.containerImg5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    margin-top: 10px;
+
+
+    .threeColumnsContainer {
+        display: flex;
+        width: 60%;
+        height: auto;
+        gap: 20px;
+
+        .column1,
+        .column2,
+        .column3 {
+            flex: 1;
+            height: 300px;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .column1 {
+            background-image: url(https://images.squarespace-cdn.com/content/v1/60241cb68df65b530cd84d95/5f00e8d5-2682-49e2-a98e-fbafc6095c29/bg.jpg?format=2500w);
+            background-size: cover;
+            background-position: center center;
+
+            .disneyLogo2 {
+                width: 220px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                color: white;
+                font-family: "Brandon Grotesque", "Montserrat", "Brandon Grotesque", "Helvetica Neue", Arial, sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 1.2;
+                letter-spacing: 3px;
+                text-transform: uppercase;
+                font-size: 1rem;
+                margin: 0;
+                text-align: center;
+            }
+        }
+
+        .column2 {
+            background-image: url(https://images.squarespace-cdn.com/content/v1/60241cb68df65b530cd84d95/43b766a0-0395-4f7e-a68d-4a824edd0ba1/bg.jpg?format=2500w);
+            background-size: cover;
+            background-position: center center;
+
+            .disneyLogo3 {
+                width: 220px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                color: white;
+                font-family: "Brandon Grotesque", "Montserrat", "Brandon Grotesque", "Helvetica Neue", Arial, sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 1.2;
+                letter-spacing: 3px;
+                text-transform: uppercase;
+                font-size: 1rem;
+                margin: 0;
+                text-align: center;
+            }
+        }
+
+        .column3 {
+            background-image: url(https://images.squarespace-cdn.com/content/v1/60241cb68df65b530cd84d95/7a7b44e5-0525-47aa-8330-f45fe9661355/bg.jpg?format=2500w);
+            background-size: cover;
+            background-position: center center;
+
+            .disneyLogo4 {
+                width: 140px;
+            }
+
+            p {
+                color: white;
+                font-family: "Brandon Grotesque", "Montserrat", "Brandon Grotesque", "Helvetica Neue", Arial, sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 1.2;
+                letter-spacing: 3px;
+                text-transform: uppercase;
+                font-size: 1rem;
+                margin: 0;
+                text-align: center;
+            }
+        }
+    }
+}

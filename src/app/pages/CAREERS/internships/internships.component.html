@@ -1,0 +1,195 @@
+<div class="renderman-container">
+    <div class="containerImg">
+        <header class="page-header">
+            <h1 class="page-title">INTERNSHIPS</h1>
+        </header>
+    </div>
+</div>
+
+<section class="experience-section">
+    <div class="experience-container">
+        <h2 class="experience-title">An experience like no other</h2>
+        <p class="experience-description">
+            Our internship and residency programs offer emerging talent an opportunity 
+            to dive into the world of animation, from a uniquely Pixar perspective. 
+            At the studio, participants collaborate alongside peers and industry 
+            professionals, infusing ongoing projects with new ideas and fresh approaches.
+        </p>
+    </div>
+</section>
+
+<section class="internships-section">
+    <div class="internships-container">
+        <div class="internship-header">
+            <span class="internship-subtitle">INTERNSHIPS</span>
+            <h2 class="internship-main-title">Learn by doing</h2>
+            <p class="internship-description">
+                We offer a range of exciting and immersive internship opportunities. Participants
+                can choose from specialized tracks—by learning through direct mentorship and
+                hands-on training, you'll gain the experience of a lifetime
+            </p>
+        </div>
+
+        <div class="internship-item">
+            <div class="internship-image">
+                <img src="https://images.squarespace-cdn.com/content/v1/60241cb68df65b530cd84d95/4b6d7fd7-53ff-47e0-b5cc-1760ffa601a0/3.jpg?format=2500w" 
+                     alt="Production Internships" class="internship-img">
+            </div>
+            <div class="internship-content">
+                <h3 class="internship-title">Production Internships</h3>
+                <p class="internship-text">
+                    Deepen your skills as you learn about Pixar's unique filmmaking
+                    process. During this 12-week paid experience, you'll be
+                    immersed in the creative filmmaking process on a daily basis,
+                    collaborating with art and technology teams, completing hands-
+                    on projects, and attending special studio events.
+                </p>
+                <div class="dropdown-item" [class.active]="dropdowns.productionFacing">
+                    <button class="dropdown-button" (click)="toggleDropdown('productionFacing')">
+                        <span>Production Facing Opportunities</span>
+                        <span class="dropdown-icon">+</span>
+                    </button>
+                    <div class="dropdown-content">
+                        <p>Work directly with production teams on active film projects. Experience the day-to-day operations of bringing animated stories to life, from initial concept to final render. Collaborate with directors, artists, and technical staff to understand the complete filmmaking pipeline.</p>
+                    </div>
+                </div>
+                <div class="dropdown-item" [class.active]="dropdowns.curriculumBased">
+                    <button class="dropdown-button" (click)="toggleDropdown('curriculumBased')">
+                        <span>Curriculum Based Opportunities</span>
+                        <span class="dropdown-icon">+</span>
+                    </button>
+                    <div class="dropdown-content">
+                        <p>Participate in structured educational programs designed to build core animation and storytelling skills. Attend workshops, masterclasses, and mentorship sessions that cover everything from traditional drawing techniques to advanced digital animation methods.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="internship-item">
+            <div class="internship-image">
+                <img src="https://images.squarespace-cdn.com/content/v1/60241cb68df65b530cd84d95/40f91269-c3ad-4115-bf40-03ce0dd0d83f/it2.jpg?format=2500w" 
+                     alt="Technology Internships" class="internship-img">
+            </div>
+            <div class="internship-content">
+                <h3 class="internship-title">Technology Internships</h3>
+                <p class="internship-text">
+                    Join our technology teams and work on cutting-edge tools and systems
+                    that power Pixar's creative process. You'll collaborate with engineers
+                    and artists to develop innovative solutions that push the boundaries
+                    of animation and storytelling technology.
+                </p>
+                <div class="dropdown-item" [class.active]="dropdowns.softwareDevelopment">
+                    <button class="dropdown-button" (click)="toggleDropdown('softwareDevelopment')">
+                        <span>Software Development Opportunities</span>
+                        <span class="dropdown-icon">+</span>
+                    </button>
+                    <div class="dropdown-content">
+                        <p>Build next-generation software tools used by Pixar artists worldwide. Work on rendering engines, animation systems, and custom applications. Gain hands-on experience with C++, Python, and advanced graphics programming while solving real production challenges.</p>
+                    </div>
+                </div>
+                <div class="dropdown-item" [class.active]="dropdowns.technicalPipeline">
+                    <button class="dropdown-button" (click)="toggleDropdown('technicalPipeline')">
+                        <span>Technical Pipeline Opportunities</span>
+                        <span class="dropdown-icon">+</span>
+                    </button>
+                    <div class="dropdown-content">
+                        <p>Optimize the technical workflows that enable seamless film production. Focus on pipeline automation, data management, and system integration. Learn about render farm operations, asset tracking, and the infrastructure behind blockbuster animated films.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="internship-item">
+            <div class="internship-image">
+                <img src="https://images.squarespace-cdn.com/content/v1/60241cb68df65b530cd84d95/2e04b8a5-8f86-4407-8c8f-7b50865df371/4.jpg?format=2500w" 
+                     alt="Studio Operations Internships" class="internship-img">
+            </div>
+            <div class="internship-content">
+                <h3 class="internship-title">Studio Operations Internships</h3>
+                <p class="internship-text">
+                    Experience the business side of filmmaking through our studio operations
+                    internships. Work alongside professionals in areas like marketing,
+                    finance, human resources, and business development to understand
+                    how creative vision becomes commercial success.
+                </p>
+                <div class="dropdown-item" [class.active]="dropdowns.businessDevelopment">
+                    <button class="dropdown-button" (click)="toggleDropdown('businessDevelopment')">
+                        <span>Business Development Opportunities</span>
+                        <span class="dropdown-icon">+</span>
+                    </button>
+                    <div class="dropdown-content">
+                        <p>Drive strategic initiatives and partnerships that expand Pixar's reach. Analyze market trends, evaluate licensing opportunities, and support business planning. Work with cross-functional teams to identify growth opportunities and help shape the studio's future direction.</p>
+                    </div>
+                </div>
+                <div class="dropdown-item" [class.active]="dropdowns.marketingCommunications">
+                    <button class="dropdown-button" (click)="toggleDropdown('marketingCommunications')">
+                        <span>Marketing and Communications</span>
+                        <span class="dropdown-icon">+</span>
+                    </button>
+                    <div class="dropdown-content">
+                        <p>Craft compelling narratives that connect Pixar films with global audiences. Develop social media campaigns, create promotional content, and support public relations efforts. Learn the art of storytelling beyond the screen while building brand awareness and engagement.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="testimonial-section">
+    <div class="testimonial-container">
+        <div class="testimonial-image">
+            <img src="https://images.squarespace-cdn.com/content/v1/60241cb68df65b530cd84d95/ba9b9e04-b48d-4cdd-9e39-c59cd659b067/2.jpg?format=2500w" 
+                 alt="David Luoh" class="testimonial-img">
+        </div>
+        <div class="testimonial-content">
+            <blockquote class="testimonial-quote">
+                "Over a decade ago my summer as a Pixar Undergraduate Program intern opened my eyes to the inspiring work happening in the space between technology and art. Now, having the opportunity to teach in this program is one of my favorite things I get to do."
+            </blockquote>
+            <div class="testimonial-author">
+                <h4 class="author-name">DAVID LUOH</h4>
+                <p class="author-title">SUPERVISING TECHNICAL DIRECTOR</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="studio-residents-section">
+    <div class="studio-residents-container">
+        <div class="resident-item">
+            <div class="resident-image">
+                <img src="https://images.squarespace-cdn.com/content/v1/60241cb68df65b530cd84d95/8161f3cb-9f73-4053-b03d-77e260ac5c71/story2.jpg?format=1000w" 
+                     alt="Studio Residents" class="resident-img">
+            </div>
+            <div class="resident-content">
+                <h3 class="resident-title">Studio Residents</h3>
+                <p class="resident-text">
+                    Over the course of a residency, you'll collaborate directly
+                    with Pixar employees on studio projects as an integral part
+                    of the team.
+                </p>
+                <p class="resident-text">
+                    While working at the studio, you'll be part of Pixar's vibrant
+                    community. From screenings and lectures to social health
+                    and wellness, you'll gain access to a wide range of
+                    company events, initiatives, and amenities to learn and
+                    grow—personally and professionally.
+                </p>
+                <p class="resident-text">
+                    Residencies are deeply immersive. Programs can last for up
+                    to one year. For those who are eligible, competitive
+                    compensation and relocation assistance are available.
+                </p>
+                <div class="dropdown-item" [class.active]="dropdowns.focusAreas">
+                    <button class="dropdown-button" (click)="toggleDropdown('focusAreas')">
+                        <span>Focus Areas</span>
+                        <span class="dropdown-icon">+</span>
+                    </button>
+                    <div class="dropdown-content">
+                        <p>Our Studio Resident program focuses on advanced research and development in key areas including computer graphics, machine learning applications in animation, procedural modeling, advanced rendering techniques, and innovative storytelling tools. Residents work on cutting-edge projects that push the boundaries of animation technology.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

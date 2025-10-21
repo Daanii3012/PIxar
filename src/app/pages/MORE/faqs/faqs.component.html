@@ -1,0 +1,20 @@
+<div class="containerImg">
+  <div class="page-header">
+    <h1 class="page-title">FAQS</h1>
+  </div>
+</div>
+
+<div class="faq-section">
+  <div class="faq-container">
+    <div class="faq-item"></div>
+    <div class="faq-item" *ngFor="let faq of faqs; let i = index">
+      <div class="faq-question" (click)="toggleFaq(i)">
+        <span>{{ faq.question }}</span>
+        <span class="faq-icon" [class.expanded]="faq.expanded">+</span>
+      </div>
+      <div class="faq-answer" [class.expanded]="faq.expanded">
+        <p>{{ faq.answer }}</p>
+      </div>
+    </div>
+  </div>
+</div>

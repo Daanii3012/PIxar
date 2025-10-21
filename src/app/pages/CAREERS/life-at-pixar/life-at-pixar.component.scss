@@ -1,0 +1,536 @@
+.containerImg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 650px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background-image: url('https://images.squarespace-cdn.com/content/v1/60241cb68df65b530cd84d95/62655b5f-5278-478d-8729-fa0f6f8b9166/c2.jpg?format=2500w');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    clip-path: ellipse(100% 90% at 50% 0%);
+    overflow: hidden;
+}
+
+.renderman-container {
+  min-height: 60vh;
+  background-color: #ffffff;
+}
+
+.page-header {
+  text-align: center;
+  
+  .page-title {
+    font-family: "Brandon Grotesque", "Montserrat", "Helvetica Neue", Arial, sans-serif;
+    font-size: 2.7rem;
+    font-weight: 700;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 0 0 10px 0;
+  }
+}
+
+.powerful-stories-section {
+    padding: 0 0 80px 0;
+    background-color: #ffffff;
+
+    .stories-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .stories-title {
+        font-family: "Brandon Grotesque", "Montserrat", "Helvetica Neue", Arial, sans-serif;
+        font-size: 2.5rem;
+        font-weight: 300;
+        line-height: 1.2;
+        color: #333333;
+        margin-bottom: 40px;
+    }
+
+    .stories-text {
+        font-family: "Brandon Grotesque", "Montserrat", "Helvetica Neue", Arial, sans-serif;
+        font-size: 1.2rem;
+        line-height: 1.6;
+        color: #000000;
+        margin-bottom: 25px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.inclusion-section {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+
+    .inclusion-container {
+        display: flex;
+        height: 600px;
+        width: 100%;
+    }
+
+    .inclusion-image-half {
+        flex: 1;
+        background-image: url('https://images.squarespace-cdn.com/content/v1/60241cb68df65b530cd84d95/e0824e20-e728-4149-a7f1-ed79529c868d/10892_PixarInclusion_0079f.jpg?format=2500w');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .inclusion-content-half {
+        flex: 1;
+        background-color: #e6e6e6;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .inclusion-text-wrapper {
+            max-width: 400px;
+            padding: 40px;
+
+            .inclusion-subtitle {
+                font-family: "Brandon Grotesque", "Montserrat", "Helvetica Neue", Arial, sans-serif;
+                font-size: 0.9rem;
+                font-weight: 600;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                color: #666666;
+                margin-bottom: 20px;
+                display: block;
+            }
+
+            .inclusion-title {
+                font-family: "Brandon Grotesque", "Montserrat", "Helvetica Neue", Arial, sans-serif;
+                font-size: 2.5rem;
+                font-weight: 300;
+                line-height: 1.2;
+                color: #333333;
+                margin-bottom: 30px;
+            }
+
+            .inclusion-text {
+                font-family: "Brandon Grotesque", "Montserrat", "Helvetica Neue", Arial, sans-serif;
+                font-size: 1.2rem;
+                line-height: 1.6;
+                color: #000000;
+                margin: 0;
+            }
+        }
+    }
+}
+
+.different-section {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+
+    .different-container {
+        display: flex;
+        height: 600px;
+        width: 100%;
+    }
+
+    .different-content-half {
+        flex: 1;
+        background-color: #ececec;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .different-text-wrapper {
+            max-width: 400px;
+            padding: 40px;
+
+            .different-title {
+                font-family: "Brandon Grotesque", "Montserrat", "Helvetica Neue", Arial, sans-serif;
+                font-size: 2.5rem;
+                font-weight: 300;
+                line-height: 1.2;
+                color: #333333;
+                margin-bottom: 30px;
+            }
+
+            .different-text {
+                font-family: "Brandon Grotesque", "Montserrat", "Helvetica Neue", Arial, sans-serif;
+                font-size: 1.2rem;
+                line-height: 1.6;
+                color: #000000;
+                margin: 0;
+            }
+        }
+    }
+
+    .different-image-half {
+        flex: 1;
+        background-image: url('https://images.squarespace-cdn.com/content/v1/60241cb68df65b530cd84d95/001f0e0c-e238-45d2-b8b6-a1ee68cacf04/v2.JPG-0.jpg?format=2500w');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+.testimonial-section {
+    background-color: #ffffff;
+    padding: 80px 0;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+
+    .testimonial-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 40px;
+        display: flex;
+        align-items: center;
+        gap: 80px;
+    }
+
+    .testimonial-image {
+        flex-shrink: 0;
+
+        .testimonial-img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+
+    .testimonial-content {
+        flex: 1;
+
+        .testimonial-quote {
+            font-family: "Brandon Grotesque", "Montserrat", "Helvetica Neue", Arial, sans-serif;
+            font-size: 1.3rem;
+            line-height: 1.6;
+            color: #000000;
+            font-style: normal;
+            margin: 0 0 40px 0;
+            quotes: '"' '"';
+        }
+
+        .testimonial-quote:before {
+            content: open-quote;
+        }
+
+        .testimonial-quote:after {
+            content: close-quote;
+        }
+
+        .testimonial-author {
+            .author-name {
+                font-family: "Brandon Grotesque", "Montserrat", "Helvetica Neue", Arial, sans-serif;
+                font-size: 1rem;
+                font-weight: 700;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                color: #333333;
+                margin: 0 0 8px 0;
+            }
+
+            .author-title {
+                font-family: "Brandon Grotesque", "Montserrat", "Helvetica Neue", Arial, sans-serif;
+                font-size: 0.9rem;
+                font-weight: 400;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                color: #666666;
+                margin: 0;
+            }
+        }
+    }
+}
+
+.values-section {
+    background-color: #f4f4f4;
+    padding: 120px 0;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+
+    .values-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 40px;
+        display: flex;
+        gap: 100px;
+        align-items: flex-start;
+    }
+
+    .values-left {
+        flex: 1;
+
+        .values-subtitle {
+            font-family: "Brandon Grotesque", "Montserrat", "Helvetica Neue", Arial, sans-serif;
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #666666;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .values-title {
+            font-family: "Brandon Grotesque", "Montserrat", "Helvetica Neue", Arial, sans-serif;
+            font-size: 3rem;
+            font-weight: 300;
+            line-height: 1.2;
+            color: #333333;
+            margin-bottom: 30px;
+        }
+
+        .values-description {
+            font-family: "Brandon Grotesque", "Montserrat", "Helvetica Neue", Arial, sans-serif;
+            font-size: 1.4rem;
+            line-height: 1.6;
+            color: #000000;
+            margin: 0;
+        }
+    }
+
+    .values-right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        .value-item {
+            .value-name {
+                font-family: "Brandon Grotesque", "Montserrat", "Helvetica Neue", Arial, sans-serif;
+                font-size: 1.8rem;
+                font-weight: 400;
+                color: #333333;
+                margin-bottom: 8px;
+            }
+
+            .value-description {
+                font-family: "Brandon Grotesque", "Montserrat", "Helvetica Neue", Arial, sans-serif;
+                font-size: 1.3rem;
+                line-height: 1.4;
+                color: #999999;
+                margin: 0;
+            }
+        }
+    }
+}
+
+.testimonial-section-two {
+    background-color: #ffffff;
+    padding: 80px 0;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+
+    .testimonial-container-two {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 40px;
+        display: flex;
+        align-items: center;
+        gap: 80px;
+    }
+
+    .testimonial-image-two {
+        flex-shrink: 0;
+
+        .testimonial-img-two {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+
+    .testimonial-content-two {
+        flex: 1;
+
+        .testimonial-quote-two {
+            font-family: "Brandon Grotesque", "Montserrat", "Helvetica Neue", Arial, sans-serif;
+            font-size: 1.3rem;
+            line-height: 1.6;
+            color: #000000;
+            font-style: normal;
+            margin: 0 0 40px 0;
+        }
+
+        .testimonial-author-two {
+            .author-name-two {
+                font-family: "Brandon Grotesque", "Montserrat", "Helvetica Neue", Arial, sans-serif;
+                font-size: 1rem;
+                font-weight: 700;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                color: #333333;
+                margin: 0 0 8px 0;
+            }
+
+            .author-title-two {
+                font-family: "Brandon Grotesque", "Montserrat", "Helvetica Neue", Arial, sans-serif;
+                font-size: 0.9rem;
+                font-weight: 400;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                color: #666666;
+                margin: 0;
+            }
+        }
+    }
+}
+
+.resources-section {
+    background-color: #f4f4f4;
+    padding: 120px 0;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+
+    .resources-container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 40px;
+    }
+
+    .resources-header {
+        text-align: center;
+        margin-bottom: 80px;
+
+        .resources-title {
+            font-family: "Brandon Grotesque", "Montserrat", "Helvetica Neue", Arial, sans-serif;
+            font-size: 3.5rem;
+            font-weight: 300;
+            color: #333333;
+            margin-bottom: 30px;
+        }
+
+        .resources-description {
+            font-family: "Brandon Grotesque", "Montserrat", "Helvetica Neue", Arial, sans-serif;
+            font-size: 1.4rem;
+            line-height: 1.6;
+            color: #666666;
+            margin: 0;
+        }
+    }
+
+    .resources-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 80px 60px;
+        justify-items: center;
+    }
+
+    .resource-item {
+        text-align: center;
+        max-width: 320px;
+
+        .resource-icon {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 30px;
+            object-fit: contain;
+        }
+
+        .resource-title {
+            font-family: "Brandon Grotesque", "Montserrat", "Helvetica Neue", Arial, sans-serif;
+            font-size: 1.3rem;
+            font-weight: 400;
+            line-height: 1.4;
+            color: #333333;
+            margin: 0;
+        }
+    }
+}
+
+.be-extraordinary-section {
+    width: 100vw;
+    height: 500px;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background-image: url('https://images.squarespace-cdn.com/content/v1/60241cb68df65b530cd84d95/442d6d93-7eda-4c3a-b2b0-132c068f8eff/a2.jpg?format=2500w');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .be-extraordinary-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(244, 244, 244, 0.8);
+    }
+
+    .be-extraordinary-content {
+        text-align: center;
+        color: #333333;
+
+        .be-extraordinary-title {
+            font-family: "Brandon Grotesque", "Montserrat", "Helvetica Neue", Arial, sans-serif;
+            font-size: 3.5rem;
+            font-weight: 300;
+            margin-bottom: 20px;
+            color: #333333;
+        }
+
+        .be-extraordinary-subtitle {
+            font-family: "Brandon Grotesque", "Montserrat", "Helvetica Neue", Arial, sans-serif;
+            font-size: 1.4rem;
+            margin-bottom: 40px;
+            color: #333333;
+            opacity: 0.9;
+        }
+
+        .view-positions-btn {
+            background-color: #333333;
+            color: #ffffff;
+            border: none;
+            padding: 15px 30px;
+            font-family: "Brandon Grotesque", "Montserrat", "Helvetica Neue", Arial, sans-serif;
+            font-size: 1rem;
+            font-weight: 500;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: #555555;
+            }
+        }
+    }
+}
+

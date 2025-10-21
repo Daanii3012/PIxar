@@ -1,0 +1,53 @@
+<div class="containerImg">
+  <div class="page-header">
+    <h1 class="page-title">LEADERSHIP</h1>
+  </div>
+</div>
+
+<div class="leadership-container">
+  <div class="content-sections">
+    
+    <section class="senior-leadership">
+      <div class="senior-leaders">
+        <div class="senior-leader-card">
+          <div class="senior-leader-image">
+            <img src="https://images.squarespace-cdn.com/content/v1/60241cb68df65b530cd84d95/462b7496-dce9-454b-9beb-1382dc13fe8e/morris.jpg?format=2500w" alt="Jim Morris" class="senior-leader-img">
+          </div>
+          <div class="senior-leader-info">
+            <h2 class="senior-leader-name">Jim Morris</h2>
+            <p class="senior-leader-title">President</p>
+          </div>
+        </div>
+
+        <div class="senior-leader-card">
+          <div class="senior-leader-image">
+            <img src="https://images.squarespace-cdn.com/content/v1/60241cb68df65b530cd84d95/c9095836-7792-43eb-bc1d-fe61a02096cf/docter.jpg?format=2500w" alt="Pete Docter" class="senior-leader-img">
+          </div>
+          <div class="senior-leader-info">
+            <h2 class="senior-leader-name">Pete Docter</h2>
+            <p class="senior-leader-title">Chief Creative Officer</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+    
+    <section class="leadership-row" *ngFor="let row of leadershipRows; let i = index">
+      <div class="leaders-grid">
+        <div class="leader-card" 
+             *ngFor="let leader of row; "
+             [class.senior]="leader.isSenior">
+          <div class="leader-image">
+            <img [src]="leader.image" [alt]="leader.name" class="leader-img">
+          </div>
+          <div class="leader-info">
+            <h3 class="leader-name">{{leader.name}}</h3>
+            <p class="leader-title">{{leader.title}}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</div>

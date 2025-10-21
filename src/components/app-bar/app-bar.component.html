@@ -1,0 +1,81 @@
+<nav class="app-bar">
+  <div class="nav-container">
+    <div class="nav-brand">
+      <a href="/" class="brand-link">
+        <img [src]="logoUrl" alt="PIXAR Logo" class="brand-logo">
+      </a>
+    </div>
+
+    <div class="nav-menu">
+      <ul class="nav-list">
+        <div class="nav-item" *ngFor="let item of menuItems" (mouseenter)="showDropdown(item.name)"
+          (mouseleave)="hideDropdown()">
+          <span class="nav-text">
+            {{ item.name }}
+          </span>
+
+
+          <div class="dropdown-modal" *ngIf="item.name === 'FILMS' && activeDropdown === 'FILMS'" @dropdownAnimation>
+            <div class="dropdown-content">
+              <div class="dropdown-section">
+                <h3 class="dropdown-title">FILMS</h3>
+                <ul class="dropdown-links">
+                  <li><a href="/feature-films" class="dropdown-link">FEATURE FILMS</a></li>
+                  <li><a href="/short-films" class="dropdown-link">SHORT FILMS</a></li>
+                  <li><a href="/series" class="dropdown-link">SERIES</a></li>
+                  <li><a href="/sparkshorts" class="dropdown-link">SPARKSHORTS</a></li>
+                  <li><a href="/documentaries" class="dropdown-link">DOCUMENTARIES</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="dropdown-modal" *ngIf="item.name === 'TECHNOLOGY' && activeDropdown === 'TECHNOLOGY'"
+            @dropdownAnimation>
+            <div class="dropdown-content">
+              <div class="dropdown-section">
+                <h3 class="dropdown-title">TECH</h3>
+                <ul class="dropdown-links">
+                  <li><a href="/technology-at-pixar" class="dropdown-link">TECH AT PIXAR</a></li>
+                  <li><a href="/renderman" class="dropdown-link">RENDERMAN</a></li>
+                  <li><a href="/openusd" class="dropdown-link">OPEN USD</a></li>
+                  <li><a href="/software-rd" class="dropdown-link">SOFTWARE R&D</a></li>
+                  <li><a href="/technology-libraries" class="dropdown-link">LIBRARIES</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="dropdown-modal" *ngIf="item.name === 'CAREERS' && activeDropdown === 'CAREERS'"
+            @dropdownAnimation>
+            <div class="dropdown-content">
+              <div class="dropdown-section">
+                <h3 class="dropdown-title">CAREERS</h3>
+                <ul class="dropdown-links">
+                  <li><a href="/careers" class="dropdown-link">CAREERS AT PIXAR</a></li>
+                  <li><a href="/internships" class="dropdown-link">INTERNSHIPS</a></li>
+                  <li><a href="/life-at-pixar" class="dropdown-link">LIFE AT PIXAR</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="dropdown-modal" *ngIf="item.name === 'MORE' && activeDropdown === 'MORE'" @dropdownAnimation>
+            <div class="dropdown-content">
+              <div class="dropdown-section">
+                <h3 class="dropdown-title">MORE</h3>
+                <ul class="dropdown-links">
+                  <li><a href="/leaders" class="dropdown-link">LEADERS</a></li>
+                  <li><a href="/our-story" class="dropdown-link">OUR STORY</a></li>
+                  <li><a href="/events" class="dropdown-link">EVENTS</a></li>
+                  <li><a href="/pixar-in-a-box" class="dropdown-link">PIXAR IN A BOX</a></li>
+                  <li><a href="/faqs" class="dropdown-link">COMPANY FAQ'S</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ul>
+    </div>

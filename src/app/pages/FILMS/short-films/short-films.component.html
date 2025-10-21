@@ -1,0 +1,24 @@
+<div class="short-films-container">
+    <div class="containerImg">
+    <header class="page-header">
+    <h1 class="page-title">S H O R T &nbsp;&nbsp;&nbsp; F I L M S</h1>
+  </header>
+    </div>
+ 
+
+  <main class="films-grid">
+    <div class="film-card" *ngFor="let film of films">
+      <a [href]="film.link" class="film-link">
+        <div class="film-image-container">
+          <img [src]="film.poster" [alt]="film.title" class="film-poster">
+          <div class="film-overlay">
+            <div class="film-info">
+              <h3 class="film-title">{{ film.title }}</h3>
+              <p class="film-year">{{ film.year }}</p>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </main>
+</div>
