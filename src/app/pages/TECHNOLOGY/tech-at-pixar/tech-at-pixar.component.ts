@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { Technology } from '../../../models/technology.models';
 
 @Component({
   selector: 'app-tech-at-pixar',
@@ -11,7 +12,7 @@ import { RouterModule } from '@angular/router';
 export class TechAtPixarComponent {
   expandedDropdowns: { [key: string]: boolean } = {};
 
-  technologies = [
+  technologies: Technology[] = [
     {
       title: 'RenderMan',
       description: 'RenderMan®, the renowned Academy Award®-winning rendering technology by Pixar, stands as an industry-leading tool embraced by animation and visual effects professionals worldwide. Known for its ability to bring stunning imagery to life, RenderMan enables production pipelines to achieve unrivaled flexibility, scalability, and versatility.',

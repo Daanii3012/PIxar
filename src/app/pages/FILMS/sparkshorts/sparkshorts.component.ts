@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Film } from '../../../models/film.model';
 
 @Component({
   selector: 'app-sparkshorts',
@@ -8,7 +9,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './sparkshorts.component.scss'
 })
 export class SparkshortsComponent {
-  films = [
+  films: Film[] = [
     {
       title: 'Twenty Something',
       year: '2021',

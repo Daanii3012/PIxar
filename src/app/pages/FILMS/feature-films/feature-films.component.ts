@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Film } from '../../../models/film.model';
 
 @Component({
   selector: 'app-feature-films',
@@ -8,7 +9,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './feature-films.component.scss'
 })
 export class FeatureFilmsComponent {
-  films = [
+  films: Film[] = [
     {
       title: 'Inside Out 2',
       year: '2024',

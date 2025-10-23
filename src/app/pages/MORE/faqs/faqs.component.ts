@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Faq } from '../../../models/faq.model';
 
 @Component({
   selector: 'app-faqs',
@@ -9,7 +10,7 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./faqs.component.scss']
 })
 export class FaqsComponent {
-  faqs = [
+  faqs: Faq[] = [
     {
       question: 'I have a great idea for a Pixar movie. Can I send it to you?',
       answer: 'Pixar does not accept any kind of creative submission. All of Pixar’s ideas and stories are developed internally and it is our policy not to look at any external submissions. For legal reasons we do not consider any creative material (scripts, synopses, sketches, etc.) sent to us unsolicited.',

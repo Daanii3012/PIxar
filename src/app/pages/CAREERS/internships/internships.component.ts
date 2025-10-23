@@ -20,10 +20,12 @@ export class InternshipsComponent {
   };
 
   toggleDropdown(dropdownName: keyof typeof this.dropdowns): void {
+    const isOpen = this.dropdowns[dropdownName];
     Object.keys(this.dropdowns).forEach(key => {
       this.dropdowns[key as keyof typeof this.dropdowns] = false;
     });
-    
-    this.dropdowns[dropdownName] = !this.dropdowns[dropdownName];
+    if (!isOpen) {
+      this.dropdowns[dropdownName] = true;
+    }
   }
 }

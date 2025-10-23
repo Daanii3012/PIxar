@@ -10,6 +10,10 @@ import { CommonModule } from '@angular/common';
 export class OpenusdComponent {
   currentSlide = 0;
   
+  get trackTransform(): string {
+  return `translateX(-${this.currentSlide * 20}%)`;
+}
+
   slides = [
     { 
       image: 'https://images.squarespace-cdn.com/content/v1/60241cb68df65b530cd84d95/1714682449822-BZA64NGADBZ6YGS7VXPS/b002_118e_pub.pub16.2086.jpg?format=2500w',
@@ -40,4 +44,6 @@ export class OpenusdComponent {
   nextSlide() {
     this.currentSlide = (this.currentSlide + 1) % this.slides.length;
   }
+
+
 }

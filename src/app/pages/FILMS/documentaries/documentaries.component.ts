@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Film } from '../../../models/film.model';
 
 @Component({
   selector: 'app-documentaries',
@@ -8,7 +9,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './documentaries.component.scss'
 })
 export class DocumentariesComponent {
-  films = [
+  films: Film[] = [
     {
       title: 'Pixar in Real Life',
       year: '2019',

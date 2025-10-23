@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Film } from '../../../models/film.model';
 
 @Component({
   selector: 'app-short-films',
@@ -8,7 +9,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './short-films.component.scss'
 })
 export class ShortFilmsComponent {
-  films = [
+  films: Film[] = [
     {
       title: 'Float',
       year: '2019',

@@ -7,7 +7,7 @@
 
     <section class="image-carousel">
         <div class="carousel-container" (click)="nextSlide()">
-            <div class="carousel-track" [style.transform]="'translateX(-' + (currentSlide * 20) + '%)'">
+            <div class="carousel-track" [style.transform]="trackTransform">
                 <div class="carousel-slide" *ngFor="let slide of slides">
                     <img [src]="slide.image" [alt]="slide.alt" class="carousel-img">
                 </div>
@@ -60,25 +60,33 @@
     <section class="expanding-opportunities-section">
         <div class="expanding-container">
             <div class="expanding-image">
-                <img src="https://images.squarespace-cdn.com/content/v1/60241cb68df65b530cd84d95/81aa8688-81f0-43b2-8e27-266d69cc997c/m461_8e_4k.pub16.459.jpg?format=2500w" alt="Pixar Animation Scene" class="expanding-img">
+                <img src="https://images.squarespace-cdn.com/content/v1/60241cb68df65b530cd84d95/81aa8688-81f0-43b2-8e27-266d69cc997c/m461_8e_4k.pub16.459.jpg?format=2500w"
+                    alt="Pixar Animation Scene" class="expanding-img">
             </div>
             <div class="expanding-content">
                 <h2 class="expanding-title">Expanding Opportunities</h2>
-                
+
                 <p class="expanding-text">
-                    OpenUSD is foundational to our work at Pixar— every character, every location, and every image of our films is built on top of OpenUSD and is made possible by the technology in OpenUSD.
+                    OpenUSD is foundational to our work at Pixar— every character, every location, and every image of
+                    our films is built on top of OpenUSD and is made possible by the technology in OpenUSD.
                 </p>
-                
+
                 <p class="expanding-text">
-                    Pixar is designing and deploying the next generation of features for OpenUSD and its imaging framework Hydra and, with the investment and support of The Walt Disney Company, increasing our collaboration on OpenUSD with the growing OpenUSD community, new industries, and partners.
+                    Pixar is designing and deploying the next generation of features for OpenUSD and its imaging
+                    framework Hydra and, with the investment and support of The Walt Disney Company, increasing our
+                    collaboration on OpenUSD with the growing OpenUSD community, new industries, and partners.
                 </p>
-                
+
                 <p class="expanding-text">
-                    Pixar has a long history of creating foundational and innovative technologies in computer graphics and beyond. We believe that OpenUSD has much to offer in the growing challenges of collaboration in 3D world-building and delivering assets at scale.
+                    Pixar has a long history of creating foundational and innovative technologies in computer graphics
+                    and beyond. We believe that OpenUSD has much to offer in the growing challenges of collaboration in
+                    3D world-building and delivering assets at scale.
                 </p>
-                
+
                 <p class="expanding-text">
-                    In 2023, alongside other leading technology companies, Pixar founded the <a href="#" class="alliance-link">Alliance for OpenUSD</a> — a non-profit organization dedicated to promoting the interoperability of 3D content through OpenUSD.
+                    In 2023, alongside other leading technology companies, Pixar founded the <a href="#"
+                        class="alliance-link">Alliance for OpenUSD</a> — a non-profit organization dedicated to
+                    promoting the interoperability of 3D content through OpenUSD.
                 </p>
             </div>
         </div>
@@ -87,15 +95,19 @@
     <section class="careers-section">
         <div class="careers-container">
             <div class="careers-image">
-                <img src="https://images.squarespace-cdn.com/content/v1/60241cb68df65b530cd84d95/20133357-959e-4531-8ff2-cc74643a99a1/Group_01.jpg?format=1000w" alt="Careers at Pixar" class="careers-img">
+                <img src="https://images.squarespace-cdn.com/content/v1/60241cb68df65b530cd84d95/20133357-959e-4531-8ff2-cc74643a99a1/Group_01.jpg?format=1000w"
+                    alt="Careers at Pixar" class="careers-img">
             </div>
             <div class="careers-content">
                 <h2 class="careers-title">Careers at Pixar</h2>
-                
+
                 <p class="careers-text">
-                    Our technology teams are at the forefront of innovation, constantly pushing the boundaries of what's possible in the realm of animation. With their expertise and passion for developing cutting-edge tools and techniques, they breathe life into our characters and worlds, delivering a truly immersive and magical experience to our audiences.
+                    Our technology teams are at the forefront of innovation, constantly pushing the boundaries of what's
+                    possible in the realm of animation. With their expertise and passion for developing cutting-edge
+                    tools and techniques, they breathe life into our characters and worlds, delivering a truly immersive
+                    and magical experience to our audiences.
                 </p>
-                
+
                 <button class="careers-btn">LEARN MORE</button>
             </div>
         </div>

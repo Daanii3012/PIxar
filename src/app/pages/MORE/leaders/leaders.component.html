@@ -36,8 +36,7 @@
     <section class="leadership-row" *ngFor="let row of leadershipRows; let i = index">
       <div class="leaders-grid">
         <div class="leader-card" 
-             *ngFor="let leader of row; "
-             [class.senior]="leader.isSenior">
+             *ngFor="let leader of row">
           <div class="leader-image">
             <img [src]="leader.image" [alt]="leader.name" class="leader-img">
           </div>
