@@ -43,7 +43,7 @@ export class FeatureFilmsComponent {
     {
       title: 'Soul',
       year: '2020',
-      poster: 'https://images.squarespace-cdn.com/content/v1/60241cb68df65b530cd84d95/1713824197471-KXNPCC0PSY3RULDC9QEW/22_soul.jpg?format=300w',
+      poster: 'https://images.squarespace-cdn.com/content/v1/60241cb68df65b530cd84d95/1713824356445-IFFARPEJ7AICF8VNP41Z/20_i2.jpg?format=300w',
       link: '/soul'
     },
     {
